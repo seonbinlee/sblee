@@ -1,0 +1,14 @@
+> > x<- rowSums(replicate(2, sample(6, 10^1, replace=T)))
+Error: unexpected '>' in ">"
+>  x<- rowSums(replicate(2, sample(6, 10^1, replace=T)))
+> ?sample
+> p= ecdf(x)
+> plot(p)
+> y <- rowSums(replicate(2, sample(6, 10^1, replace=T)))
+> y <- rowSums(replicate(2, sample(6, 10^2, replace=T)))
+> p1 =ecdf(y)
+> plot(p1)
+> z <- rowSums(replicate(2, sample(6, 10^4, replace=T)))
+> p2 =ecdf(z)
+> plot(p2)
+> x<- rowSums(replicate(2, sample(6, 10^1, replace=T)))
