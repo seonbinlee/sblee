@@ -1,5 +1,0 @@
-> population <- read.csv("C:/Users/mijilove/Desktop/UNdata_Export_20150702_000511563/kk.csv") 
-> plot(population$Value)
-> ?plot
-> ?qqplot
-> qqnorm(population$Value)
