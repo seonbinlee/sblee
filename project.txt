@@ -1,0 +1,13 @@
+Project Proposal
+
+
+	Now all over the world in 21st century, the rich get richer and the poor get poorer. For example in Korea, the top 10% of rich people own about 50% of capital in Korea and we could find the fact that if parents are rich their children are likely to be rich and if they are poor, their children are likely to be poor too. After noticing this, we thought what makes this phenomena and found education level of children can be one of the reasons. Then which factor has relationship with education level of children? We assume the income of parent can affect the level of education and are going to investigate this question. 
+
+	We are going to try answer this question by using dataset of General Social Surveys (GSS) and using this we will focus on if there is any positive, negative or non correlation between two factors; 1. independent variable: the income of parents 2. dependent variable: education level of their children. If we can find positive relationship, we will conclude income of parents is related with education level and can ultimately say it can affect the heredity of wealth. 
+
+	The limitation of our question is that there would be other factors that can affect the education of level of children. Actually the best way to conduct this analysis is to control other factors, but in reality there always be other factors which influence our dependent variable(education level). So to some extent, we need to admit there can be other factors that we are not interested in.
+
+	The subject that our group is trying to answer is already conducted by other investigating organization. Some survey proved that there is positive relationship between two factors. On the other hand, other survey showed that there is little relationship with these two variables. We will figure out which one is true.    
+
+	Last of all we refer Dataset: General Social Surveys (GSS), 1972-2006 [Cumulative File] http://www3.norc.org  
+to conduct our study.  
