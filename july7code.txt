@@ -1,0 +1,19 @@
+d=5
+dice <- sample( 6,d, replace=TRUE)
+mean(dice)
+
+d=5
+for (i in 1:50) {
+  dice <- samlple(6, d, replace=TRUE)
+m1[i] <-mean(dice)
+
+hist(m1)
+
+hist(runif(10000)*6, main="")
+means <- numeric(10000)
+for ( i in 1:10000)
+  means[i] <- mean(runif(5)*10)
+
+hist(means, freq=FALSE)
+sd(means)
+sv <- seq(0,10,0,1)
