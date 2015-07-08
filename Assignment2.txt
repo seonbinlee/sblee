@@ -1,0 +1,92 @@
+#1.a
+mean(90,95,89,71,73,96,87,95,107,89,96,80,97,95,102,97,93, 101,82,83,74,91,83,98,95
+,111,99,120,93,84)
+
+92.2
+
+This quantity estimate the population mean 
+
+#1.b
+Estimate in part(a) is not likely exactly same as with population mean but can be
+almost similair
+
+#1.c
+# standard deviation
+x <- c(90,95,89,71,73,96,87,95,107,89,96,80,97,95,102,97,93, 101,82,83,74,91,83,98,95
+  ,111,99,120,93,84)
+r <-sd(x)
+r
+10.82589
+# standard error
+x <- c(90,95,89,71,73,96,87,95,107,89,96,80,97,95,102,97,93, 101,82,83,74,91,83,98,95
+      ,111,99,120,93,84)
+se <- sd(x)/sqrt(length(x))
+se
+1.976529
+#1.d
+part (c) quantity does mean standard error that standard deviation of sample divided
+by squart root n
+
+#1.e
+92.2-2*1.98, 92+2*1.98
+(88.2, 96.2)
+
+#1.f
+for 95% confidence we can assume that population mean lies between confidence 
+interval
+
+#2
+male= c(220.1, 218.6, 229.6, 228.8, 222, 224.1, 226.5)
+female= c(223.4, 221.5, 230.2, 224.3, 223.8, 230.8)
+t.test(male, female, var.equal=TRUE)
+
+Two Sample t-test
+
+data:  male and female
+t = -0.62681, df = 11, p-value = 0.5436
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+  -6.423378  3.575759
+sample estimates:
+  mean of x mean of y 
+224.2429  225.6667 
+
+
+The t-test indicates that p-value is 0.5436 which is larger than 0.05
+so we can say that there is no difference between men's cholesterol concentration
+and that of women's
+
+# 3
+a: False, since p-value is 0.04 and it indicates that there is significant effect
+of treatment
+b: True, just similar vein that I mentioned on quesiton a, treatment has some effect
+since P-value is 0.04
+c: False, type I error is 0.05
+d: False, in this case we can't estimate type 2 error
+e: True, since P-value is larger than 0.01 when we set significance as 0.01'
+
+# 4
+A=c(248,236,269,254,249,251,260,245,239,255)
+B=c(380,391,377,392,398,374)
+wilcox.test(1.5*A,B)
+
+Wilcoxon rank sum test
+
+data:  1.5 * A and B
+W = 16, p-value = 0.1471
+alternative hypothesis: true location shift is not equal to 0
+
+since P-value is larger than 0.05 we can say that the red blood cells of person B
+are 1.5 times the volume of person A
+
+
+# 5
+DATA <-c(15,23,41,51,12)
+sd(DATA)
+16.93517
+se <- sd(DATA)/sqrt(length(DATA))
+se
+7.573638
+
+as you can see above example, standard error of means is the value that is 
+standard deviation/number of observation
