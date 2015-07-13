@@ -1,0 +1,4 @@
+m <- read.csv("C:/users/mijilove/Desktop/kkk.csv")
+install.packages("ggplot2")
+library(ggplot2)
+qplot(m$Avegrade, geom="histogram") 
