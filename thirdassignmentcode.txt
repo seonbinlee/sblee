@@ -1,0 +1,28 @@
+#copy fuction of the class
+
+library("ElemStatLearn")
+
+
+sub = sample(nrow(spam), floor(nrow(spam)*0.9))
+train = spam[sub,]
+test= spam[-sub, ]
+
+xTrain = train[, -58]
+yTarin = testspam
+
+model = train(xTrain, yTrain, 'nb', trControl-trainControl(method='cv',number=10))
+
+prop.table(table(predict(model$finalmodel,xTest)$class,yTest))
+
+
+# regression
+# example 1
+ye.model <- lm(pp$Avegrade~pp$AveEdu, data=pp)
+pp$pred <- predict(ye.model, pp)
+points(pp$AveEdu, pp$pred, col="blue" , pch=16)
+plot(pp$Avegrade, pp$AveEdu)
+#example2
+newpp <- data.frame(AveEdu = seq(1,25,0.5))
+newpp$pred <- predict(ye.model, newpp)
+points(newpp$AveEdu, newpp$pred, col="green")
+points(newpp$AveEdu, newpp$pred, col="green", pch=3)
